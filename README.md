@@ -42,7 +42,7 @@ Click the "Build App" button at the top and choose to "Zoom Apps" application.
 3. Click "Create"
 
 For more information, you can follow [this guide](https://marketplace.zoom.us/docs/beta-docs/zoom-apps/createazoomapp)
-check out  [this video series]() on how to create and configure these sample Zoom Apps.
+check out [this video series]() on how to create and configure these sample Zoom Apps.
 
 ### Config: App Credentials
 
@@ -58,30 +58,29 @@ Redirect URL for OAuth: https://xxxxx.ngrok.io/auth
 
 #### OAuth allow list
 
-- `https://example.ngrok.io`
+-   `https://example.ngrok.io`
 
 #### Domain allow list
 
-- `appssdk.zoom.us`
-- `ngrok.io`
-- `signaling.yjs.dev`
-- `y-webrtc-signaling-eu.herokuapp.com`
-- `y-webrtc-signaling-us.herokuapp.com`
+-   `appssdk.zoom.us`
+-   `ngrok.io`
+-   `signaling.yjs.dev`
+-   `y-webrtc-signaling-eu.herokuapp.com`
+-   `y-webrtc-signaling-us.herokuapp.com`
 
 > NOTE: This sample application uses the public heroku signaling servers provided by the Y.js organization, as such any information your app synchronizes through their services is considered non-private. However you can create and host your own signaling server using the information for the y-webrtc library -- https://github.com/yjs/y-webrtc#signaling
-
 
 ### Config: Information
 
 The following information is required to activate your application:
 
-- Basic Information
-    - App name
-    - Short description
-    - Long description (entering a short message here is fine for now)
-- Developer Contact Information
-    - Name
-    - Email address
+-   Basic Information
+    -   App name
+    -   Short description
+    -   Long description (entering a short message here is fine for now)
+-   Developer Contact Information
+    -   Name
+    -   Email address
 
 > NOTE: if you intend to publish your application on the Zoom Apps Marketplace, more information will be required in this section before submitting.
 
@@ -92,18 +91,18 @@ sections:
 
 #### APIs
 
-- `getRunningContext`
-- `getUserContext`
-- `getMeetingUUID`
-- `connect`
-- `postMessage`
+-   `getRunningContext`
+-   `getUserContext`
+-   `getMeetingUUID`
+-   `connect`
+-   `postMessage`
 
 #### Events:
 
-- `onParticipantChange`
-- `onConnect`
-- `onMeeting`
-- `onMessage`
+-   `onParticipantChange`
+-   `onConnect`
+-   `onMeeting`
+-   `onMessage`
 
 ### Zoom App Features
 
@@ -113,10 +112,10 @@ Enable `Collaborate mode`
 
 Select the following OAuth scopes from the Scopes tab:
 
-- `meeting:read`
-- `meeting:write`
-- `user:read`
-- `zoomapp:inmeeting`
+-   `meeting:read`
+-   `meeting:write`
+-   `user:read`
+-   `zoomapp:inmeeting`
 
 ### Config `.env`
 
@@ -140,9 +139,9 @@ If you are a [Zoom for Government (ZfG)](https://www.zoomgov.com/) customer you 
 the base URL used for Zoom. This will allow you to adjust to the different Marketplace and API Base URLs used by ZfG
 customers.
 
-**Marketplace URL:** marketplace.*zoomgov.com*
+**Marketplace URL:** marketplace._zoomgov.com_
 
-**API Base URL:** api.*zoomgov.com*
+**API Base URL:** api._zoomgov.com_
 
 ## Start the App
 
@@ -173,7 +172,7 @@ NODE_ENV=production npm start
 
 # Windows
 set NODE_ENV=production && npm start
-````
+```
 
 ## Usage
 

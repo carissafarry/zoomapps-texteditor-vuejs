@@ -1,5 +1,5 @@
-import fse from 'fs-extra'
-import {init, shell} from './common.js';
+import fse from 'fs-extra';
+import { init, shell } from './common.js';
 
 const out = './dist';
 

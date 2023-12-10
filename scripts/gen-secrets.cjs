@@ -1,8 +1,8 @@
-const envsub = require('envsub')
-const crypto = require('crypto')
-const fs = require('fs')
+const envsub = require('envsub');
+const crypto = require('crypto');
+const fs = require('fs');
 
-const {name} = require('../package.json')
+const { name } = require('../package.json');
 
 const outputFile = '.env';
 const templateFile = `${outputFile}.sample`;
