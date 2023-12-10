@@ -1,14 +1,14 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { ref } from "vue";
+import { defineStore } from "pinia";
 
-export const useMeetingStore = defineStore('meeting', () => {
-  const meetingId = ref('')
+export const useMeetingStore = defineStore("meeting", () => {
+  const meetingId = ref("");
 
   // const doubleCount = computed(() => count.value * 2)
 
   function update(state) {
-    meetingId.value = state
+    meetingId.value = state;
   }
 
-  return { meetingId, update }
-})
+  return { meetingId, update };
+});

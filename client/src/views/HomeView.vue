@@ -1,8 +1,5 @@
-<script setup>
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main>
-    App home page
-  </main>
+  <main>App home page</main>
 </template>

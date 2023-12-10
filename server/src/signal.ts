@@ -32,6 +32,7 @@ function send(conn: WebSocket, msg: message) {
 }
 
 function onConnect(wss: WebSocket) {
+    console.log('onConnect');
     let closed = false;
     let pongReceived = true;
 
